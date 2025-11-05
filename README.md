@@ -18,7 +18,6 @@ Official implementation of the NeurIPS 2025 paper **"Why 1 + 1 < 1 in Visual Tok
   - [Using MoB with LLaVA](#using-mob-with-llava)
   - [Using MoB with Qwen2-VL](#using-mob-with-qwen2-vl)
   - [Benchmarking with lmms-eval](#benchmarking-with-lmms-eval)
-- [Model Zoo](#model-zoo)
 - [Citation](#citation)
 - [Acknowledgements & License](#acknowledgements--license)
 
@@ -199,16 +198,6 @@ MoB/
 
 ---
 
-## Model Zoo
-| Backbone | Checkpoint | Notes |
-|----------|------------|-------|
-| LLaVA / LLaVA-NeXT | Coming soon | Release will include MoB-ready weights for 7B and 13B variants |
-| Qwen2-VL | Coming soon | Inference-ready checkpoints with balanced covering defaults |
-
-We will release links once the camera-ready version is finalized.
-
----
-
 ## Citation
 If you find MoB useful for your research, please cite:
 
@@ -217,7 +206,7 @@ If you find MoB useful for your research, please cite:
   title     = {Why 1 + 1 < 1 in Visual Token Pruning: Beyond Na{"i}ve Integration via Multi-Objective Balanced Covering},
   author    = {Li, Yangfu and colleagues},
   booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2024}
+  year      = {2025}
 }
 ```
 
@@ -225,5 +214,3 @@ If you find MoB useful for your research, please cite:
 
 ## Acknowledgements & License
 MoB builds on top of the open-source [LLaVA](https://github.com/haotian-liu/LLaVA) and [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) projects. All source code in this repository is released under the **MIT License**; please consult the `LICENSE` file for details.
-
-Coming Soon.
