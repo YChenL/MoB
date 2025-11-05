@@ -1,0 +1,137 @@
+{
+  "results": {
+    "mme": {
+      "alias": "mme",
+      "mme_cognition_score,none": 512.8571428571429,
+      "mme_cognition_score_stderr,none": "N/A",
+      "mme_perception_score,none": 1620.4126650660264,
+      "mme_perception_score_stderr,none": "N/A"
+    }
+  },
+  "group_subtasks": {
+    "mme": []
+  },
+  "configs": {
+    "mme": {
+      "task": "mme",
+      "dataset_path": "lmms-lab/MME",
+      "dataset_kwargs": {
+        "token": true
+      },
+      "test_split": "test",
+      "full_docs": false,
+      "process_results_use_image": false,
+      "doc_to_visual": "<function mme_doc_to_visual at 0x7efb17acd630>",
+      "doc_to_text": "<function mme_doc_to_text at 0x7efb17acdb40>",
+      "doc_to_target": "answer",
+      "process_results": "<function mme_process_results at 0x7efb17acdf30>",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "mme_perception_score",
+          "aggregation": "<function mme_aggregate_results at 0x7efb17ace320>",
+          "higher_is_better": true
+        },
+        {
+          "metric": "mme_cognition_score",
+          "aggregation": "<function mme_aggregate_results at 0x7efb17ace680>",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "generate_until",
+      "generation_kwargs": {
+        "max_new_tokens": 16,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "num_beams": 1,
+        "do_sample": false,
+        "until": [
+          "\n\n"
+        ]
+      },
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": [
+        {
+          "version": 0.0
+        }
+      ],
+      "lmms_eval_specific_kwargs": {
+        "default": {
+          "pre_prompt": "",
+          "post_prompt": "\nAnswer the question using a single word or phrase."
+        },
+        "gpt4v": {
+          "pre_prompt": "",
+          "post_prompt": "\nAnswer the question with Yes or No."
+        },
+        "qwen_vl": {
+          "pre_prompt": "",
+          "post_prompt": " Answer:"
+        },
+        "otterhd": {
+          "pre_prompt": "",
+          "post_prompt": " Answer:"
+        },
+        "xcomposer2_4khd": {
+          "pre_prompt": "[UNUSED_TOKEN_146]user\n",
+          "post_prompt": " Answer this question briefly[UNUSED_TOKEN_145]\n[UNUSED_TOKEN_146]assistant\n"
+        },
+        "pre_prompt": "",
+        "post_prompt": "\nAnswer the question using a single word or phrase."
+      }
+    }
+  },
+  "versions": {
+    "mme": "Yaml"
+  },
+  "n-shot": {
+    "mme": 0
+  },
+  "higher_is_better": {
+    "mme": {
+      "mme_perception_score": true,
+      "mme_cognition_score": true
+    }
+  },
+  "n-samples": {
+    "mme": {
+      "original": 2374,
+      "effective": 2374
+    }
+  },
+  "config": {
+    "model": "qwen2_vl",
+    "model_args": "pretrained=Qwen/Qwen2-VL-7B-Instruct,device_map=cuda,use_flash_attention_2=True,Sparse=True,pruned_layer=2,image_token_start_index=0,image_token_length=0,max_num_trunction=128,reduction_ratio=0.667,pivot_image_token=,pivot_text_token=8",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": "",
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": "20250403_174737",
+  "task_hashes": {
+    "mme": "23b46109bd9a5008ccd55ef33935b44d1c384df057149f5dcd79b20488792ff5"
+  },
+  "model_source": "qwen2_vl",
+  "model_name": "Qwen/Qwen2-VL-7B-Instruct",
+  "model_name_sanitized": "Qwen__Qwen2-VL-7B-Instruct",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 1833925.068764554,
+  "end_time": 1835041.219187033,
+  "total_evaluation_time_seconds": "1116.1504224787932"
+}
