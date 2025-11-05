@@ -202,11 +202,14 @@ MoB/
 If you find MoB useful for your research, please cite:
 
 ```bibtex
-@inproceedings{li2024mob,
-  title     = {Why 1 + 1 < 1 in Visual Token Pruning: Beyond Na{"i}ve Integration via Multi-Objective Balanced Covering},
-  author    = {Li, Yangfu and colleagues},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2025}
+@misc{li202511,
+      title={Why 1 + 1 < 1 in Visual Token Pruning: Beyond Naive Integration via Multi-Objective Balanced Covering}, 
+      author={Yangfu Li and Hongjian Zhan and Tianyi Chen and Qi Liu and Yue Lu},
+      year={2025},
+      eprint={2505.10118},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.10118}, 
 }
 ```
 
