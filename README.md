@@ -4,7 +4,7 @@
   <img src="images/teaser.png" alt="Overview of the Multi-Objective Balanced covering framework" width="90%" />
 </p>
 
-Official implementation of the NeurIPS 2024 paper **"Why 1 + 1 < 1 in Visual Token Pruning: Beyond Naïve Integration via Multi-Objective Balanced Covering"**. MoB introduces an adaptive, geometry-aware pruning strategy that jointly optimizes **prompt alignment** and **visual coverage** so that multimodal large language models (MLLMs) retain only the most informative image tokens without sacrificing accuracy.
+Official implementation of the NeurIPS 2025 paper **"Why 1 + 1 < 1 in Visual Token Pruning: Beyond Naïve Integration via Multi-Objective Balanced Covering"**. MoB introduces an adaptive, geometry-aware pruning strategy that jointly optimizes **prompt alignment** and **visual coverage** so that multimodal large language models (MLLMs) retain only the most informative image tokens without sacrificing accuracy.
 
 ---
 
